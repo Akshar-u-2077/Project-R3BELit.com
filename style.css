@@ -1,32 +1,52 @@
-
+.typing-13 { animation: typing 0.5s steps(13) forwards;  }
+.typing-6 {animation: typing 1s steps(6) forwards;}
 .maintitle a{
+    font-family: VT323;
+    font-size:100px ;
     text-decoration:none;
     color: wheat;
+    padding: 0%;
+    margin: 0%;
+
+    /*Animation block*/
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+
+    
+}
+@keyframes typing {
+    from {width:0 ;}
+    to {width: 100%;}  
 }
 .home{
     background:black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     margin:5;
+    padding-bottom: 50px;
 }
-.posts{
-    background: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
 
-}
 header{
     display: flex;
-    flex-direction: column;
-    backdrop-filter: blur(1.5);
-    width: 500px;
     color: aliceblue;
+    font-family: VT323;
+    font-size: xx-large;
+    justify-content: space-between;
+}
+header span{
+    display: flex;
+    padding-top: 68px;
+    font-size: xx-large;
+    
 }
 nav{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     text-decoration: none;
     gap: 10px;
     color:white;
+    align-items: flex-start;
+    justify-content: flex-start;
     
 }
 nav a{
@@ -35,31 +55,104 @@ nav a{
     text-decoration: none;
     flex-direction: row;
     transition: 0.3s;
+    font-size: large;
 }
 nav a:hover{
-color: beige;
+color: wheat;
 }
-.post-entry{
-    display: flex;
-    flex-direction: column;
-
+.container {
+    font-family:Parkinsans;
+}
+.container h1{
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+.posts h1{
+    font-family:VT323;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 350%;
+    
+} 
+.container h2{
+    width: 300px;
+}
+.container h2:hover{
+    transform: scale(1.02);
+}
+.posts{
+    background: black;
     color: white;
-    width: 500px;
 }
-.post-entry a{
-    color: aliceblue;
+.post h2{
+    font-family:VT323;
+    font-size: xx-large;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+.post i{
+    display: flex;
+    font-family:Parkinsans;
+    color: gray;
+    padding-left: 40px;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 0%;
+    font-size: small;
+}
+.post p{
+    font-family:Parkinsans;
+}
+.post a{
+    display: flex;
     text-decoration: none;
+    color: antiquewhite;
+    width: 200px;
+    font-family: VT323;
+    padding-top: 20px;
+    font-size: larger;
+}
+.post a:hover{
+    color:aqua;
+    text-decoration: underline;
 }
 .post-entry h2{
     padding-left: 20px;
     transition: 0.3s;
 }
+.post-entry{
+    display: flex;
+    flex-direction: column;
+    font-family:Parkinsans;
+
+    color: white;
+    width: 700px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+.post-entry:last-child{
+    border-bottom: none;
+}
+.post-entry:last-child{
+    border-top: none;
+}
+.post-entry a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
 .post-entry h2:hover{
     text-decoration: underline;
+    color: wheat;
 }
-.post-entry span{
+.post-entry i{
+    display: flex;
+    font-family:Parkinsans;
     color: gray;
     padding-left: 40px;
+    justify-content: flex-end;
 }
 .post-entry span:hover{
     text-decoration: underline;
@@ -67,19 +160,26 @@ color: beige;
 .post-entry p{
     padding-left: 40px;
 }
-.post-date{
+.post-entry i{
     display: flex;
     color: grey;
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 40px;
+
 }
-.post a{
+footer h3 {
     display: flex;
-    text-decoration: none;
-    color: antiquewhite;
-    width: 200px;
+    font-family: VT323;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0%;
+    
 }
-.post a:hover{
-    color:aqua;
-    text-decoration: underline;
+footer nav{
+    font-size: larger;
+    gap: 50px;
+    padding-bottom:0px;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 50px;
 }
